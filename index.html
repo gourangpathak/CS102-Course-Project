@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WebPage Title -->
+    <title>Food Delivery Website</title>
+
+    <!-- Linking CSS File -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts Linked -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@800&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- Linked Font Awesome for some icons -->
+
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+
+    <!-- Favicon added -->
+
+    <link rel="icon" type="image/png" sizes="180x180" href="img/favicon-96x96.png">
+
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <!-- Light and Dark Theme Switch Button  -->
+
+    <input type="checkbox" id="checkbox">
+
+
+    <!-- main container div starts here  -->
+    <div class="main-container">
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Home Section Starts-->
+        <div class="starting-page" id="home">
+
+            <!-- Using a div to mask background so that it look more perfect -->
+
+            <div class="masking-div">
+
+                <!-- Navbar Starts from here -->
+
+                <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+                    <!-- Navbar Brand or Text which will be aligned on left side -->
+
+                    <div class="navbar-brand-div">
+                        <a class="navbar-brand" href="./index.html">EAT TREAT</a>
+                    </div>
+
+                    <!-- Navbar redirecting links which will be aligned on right side -->
+
+                    <div class="navbar-items-div" id="navbarSupportedContent">
+
+                        <!-- Defining Navbar Items as a unordered list's item-->
+
+                        <ul class="navbar-nav">
+
+                            <!-- Navbar Items -->
+
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="#aboutus">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Our Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#collections">Collections</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#popularlocations">Popular Locations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#explore">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#partners">Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer-bar">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Navbar Items Div Ended -->
+
+                </nav>
+
+                <!-- Navbar Ends -->
+
+                <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Location Search Section of Home Page  -->
+
+                <div class="location-search">
+                    <!-- Main Logo of company goes here -->
+
+                    <img class="main-logo" src="img/mainlogo.png">
+
+                    <!-- Motto of the Company goes here. It will be displayed with a typing animation-->
+
+                    <div class="typing-effect">
+                        <div class="typewriter">
+                            <h2 style="  font-family: 'Montserrat', sans-serif;">
+                                Discover the best food and drinks in your city.
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- Main location search bar -->
+
+                    <div class="location-input">
+
+                        <!-- Left Side Dropdown Menu with some city names -->
+
+                        <select name="" id="">
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Karnataka">Karnataka</option>
+                        </select>
+
+                        <!-- Right Side Search Bar -->
+
+                        <input class="location-search-box" type="text" name="" id=""
+                            placeholder="Search for a restaurant, cuisine or a dish">
+                    </div>
+                </div>
+
+                <!-- Location Search Div Ends Here -->
+
+            </div>
+        </div>
+
+        <!-- Home Section Ends -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- About Us section begins  -->
+
+        <div class="about-flex-container" id="aboutus">
+
+            <!-- top right image in about us  -->
+            <img class="about-images pizza-image" src="img/pizza_slice.png" alt="">
+            <div class="about-flex-item-1">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-flex-item-2">
+                <p>We at EatTreat try to serve you your favourite meals from your favourite restaurants in your city.
+                    Our goal
+                    is to improve the food ordering & delivery experience for you everyday !
+                </p>
+                <p id="about-para">
+                    We are passionate about bringing the tastiest food to your palette !
+                </p>
+            </div>
+            <img class="about-images burger-image" src="img/burger.png" alt="">
+        </div>
+
+        <!-- About Us section ends -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Services Container begins -->
+        <div class="services-flex-container" id="services">
+            <div class="services-flex-item" id="services-flex-item-1">
+                <a href="https://www.mcdonalds.com/us/en-us/full-menu/burgers.html" target="_blank"> <img
+                        src="img/hamburger.jpg" alt="hamburger"></a>
+
+                <div class="services-flex-content">
+                    <h4>Order Online</h4>
+                    <p>Get Delicious Food Delivered at your Doorsteps</p>
+                </div>
+
+            </div>
+            <div class="services-flex-item" id="services-flex-item-2">
+                <a href="https://www.cntraveller.com/gallery/best-restaurants-in-india" target="_blank"> <img
+                        src="img/restaurant.jpg" alt="Restaurant"></a>
+                <div class="services-flex-content">
+                    <h4>Best Dining Locations</h4>
+                    <p>Explore the popular Dining Restaurants in your area</p>
+                </div>
+
+            </div>
+            <div class="services-flex-item" id="services-flex-item-3">
+                <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-c20-t99-Mumbai_Maharashtra.html"
+                    target="_blank"> <img src="img/bar.jpg" alt="Bar"> </a>
+                <div class="services-flex-content">
+                    <h4>Bars and Clubs</h4>
+                    <p>View top Bars in your Area</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Container ends -->
+
+        <!-- Info Section starts -->
+        <div class="info-container">
+            <div class="info-item">
+                <img src="img/delivery.webp" alt="delivery">
+                <h3>Quick Deliveries</h3>
+                <div class="info-content">
+                    Get your Orders delivered to do your doorsteps under 30 minutes !
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="img/minorders.webp" alt="min-orders">
+                <h3>No Minimum Orders</h3>
+                <div class="info-content">
+                    Order for yourself or for your group without any restrictions !
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="img/ordertrack.webp" alt="order-track">
+                <h3>Track Your Orders</h3>
+                <div class="info-content">
+                    Get Live Location track of your orders on Our Mobile App
+                </div>
+            </div>
+        </div>
+        <!-- Info section ends -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Collections Container Starts-->
+
+        <div class="collection" id="collections">
+
+            <!-- Main Heading of Section with subheading-->
+
+            <h1>Collections</h1>
+            <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Lucknow, based on trends</p>
+
+            <!-- Div of all collection cards, used to style things in between the cards -->
+
+            <div class="all-collection-cards">
+
+                <!-- Div of a single collection-card composed of a image and a subheading -->
+                <div class="collection-card" id="collection-card-1">
+
+                    <!-- image of respective card which will be displayed as a background image -->
+
+                    <a href="https://www.greavesindia.co.uk/the-50-best-restaurants-in-india/" target="_blank">
+                        <img class="collection-card-image" src="img/collection_trending_bg.jpg" alt=""></a><a
+                        href=""></a>
+
+                    <!-- Detail section of Collection card composed of a respective heading and number of places  -->
+
+                    <div class="collection-card-detail">
+                        <p class="main-detail">Trending This Week</p>
+                        <p class="card-detail-places">15 Places <i class="fa-solid fa-caret-right"></i></p>
+                    </div>
+                </div>
+
+                <!-- 2nd collection card div -->
+
+                <div class="collection-card" id="collection-card-2">
+                    <a href="https://www.tripoto.com/india/trips/5-legendary-nightlife-clubs-in-india-you-need-to-party-at-5bd6bb5f1b8ed"
+                        target="_blank"><img class="collection-card-image" src="img/collection_dining_table.jpg"
+                            alt=""></a>
+                    <div class="collection-card-detail">
+                        <p class="main-detail">Legendary Outlet</p>
+                        <p class="card-detail-places">20 Places <i class="fa-solid fa-caret-right"></i></p>
+                    </div>
+                </div>
+
+                <!-- 3rd collection card div -->
+
+                <div class="collection-card" id="collection-card-3">
+                    <a href="https://www.scoopwhoop.com/best-bars-pubs-in-India/" target="_blank"><img
+                            class="collection-card-image" src="img/collection_bars.jpg" alt=""></a>
+                    <div class="collection-card-detail">
+                        <p class="main-detail">Best Bars and Pubs</p>
+                        <p class="card-detail-places">9 Places <i class="fa-solid fa-caret-right"></i></p>
+                    </div>
+                </div>
+
+                <!-- 4th collection card div -->
+
+                <div class="collection-card" id="collection-card-4">
+                    <a href="https://www.crazymasalafood.com/top-20-romantic-restaurants-india/" target="_blank">
+                        <img class="collection-card-image" src="img/collection_romantic_dining_table.jpg" alt=""></a>
+                    <div class="collection-card-detail">
+                        <p class="main-detail">Most Romantic Outlets</p>
+                        <p class="card-detail-places">13 Places <i class="fa-solid fa-caret-right"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All collection card div ends here -->
+
+        </div>
+
+        <!-- Collections Section Ends Here -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!--Popular Locations Section Starts-->
+
+        <div class="popular-locations" id="popularlocations">
+
+            <!-- Main heading and subheading of the section goes here -->
+
+            <h1>Popular Locations in India</h1>
+            <p>Have a look on the popular restaurants and bar in India.</p>
+
+            <!-- Div containing all location card starts -->
+
+            <div class="all-location-cards">
+
+                <!-- Location Card 1 composed of name of a city and the number of restaurents or cafes in the city -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Lucknow</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">72 Places</p>
+                </div>
+
+                <!-- location card 2 -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Delhi</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">98 Places</p>
+                </div>
+
+                <!-- location card 3 -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Mumbai</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">107 Places</p>
+                </div>
+
+                <!-- location card 4 -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Indore</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">62 Places</p>
+                </div>
+
+                <!-- location card 5 -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Panji</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">54 Places</p>
+                </div>
+
+                <!-- location card 6 -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Patna</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">51 Places</p>
+                </div>
+
+                <!-- location card 7 -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Agra</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">68 Places</p>
+                </div>
+
+                <!-- location card 8 -->
+
+                <div class="location-card">
+                    <p class="location-card-heading">Srinagar</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">41 Places</p>
+                </div>
+
+                <!-- location card 9 -->
+                <div class="location-card">
+                    <p class="location-card-heading">Odisha</p>
+                    <p class="redirecting-arrow">></p>
+                    <p class="location-card-places">67 Places</p>
+                </div>
+            </div>
+
+            <!-- All Location Card div ends here -->
+        </div>
+
+        <!-- Locations Div ends here -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- FIND YOUR LOCATION div starts-->
+
+        <div class="maps">
+
+            <!-- Main heading and subheading of the section -->
+
+            <div class="maps-heading">
+                <h1>Find Your Location Here</h1>
+                <p>This Google Map will help you in finding your location.</p>
+            </div>
+
+            <!-- Embedding Google Maps -->
+
+            <div class="google-maps">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d359016.0398430767!2d77.29037389081533!3d28.54962565962737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1655649056397!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <!-- Find your location div ends here -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Get the EATTREAT app section starts-->
+        <section class="goodies-app" id="app">
+
+            <!-- Linking to the image displayed is done with zoom in effect  -->
+            <img class="zoom-image" src="img/mobile-app.webp" alt="goodies-app">
+
+            <!-- the right section div for the get the EAT TREAT APP starts  -->
+            <div class="goodies-app-right">
+
+                <!-- Heading added to the page with the effect of blinking animation  -->
+                <h1 class="blink-name" style="font-family: 'Montserrat';">Get the EAT TREAT App</h1>
+
+                <p>We will send you a link, open it on your phone to download our app</p>
+
+                <!-- div for radio buttons of email and phone added here -->
+                <div class="radio-btn">
+                    <label for="email"><input type="radio" id="email" name="app" value="email">Email</label>
+                    <label for="phone"><input type="radio" id="phone" name="app" value="phone">Phone</label>
+                </div>
+
+                <!-- div for input as a text from the user -->
+                <div class="email-phone">
+                    <input type="text" placeholder="Enter here">
+
+                    <!-- button for share app link is added here -->
+                    <a class="btn-share" href="#">Share App Link</a>
+                </div>
+
+                <p class="small-text"><small>Download app from</small></p>
+
+                <!-- div for downloading icons for our app starts  -->
+                <div class="app-store">
+
+                    <!-- div for the app store icon with the original referenced link to app store  -->
+                    <div class="app-image">
+                        <a href="https://www.apple.com/in/app-store/" target="_blank"> <img src="img/app_store1.webp"
+                                type="image/webp"> </a>
+                    </div>
+
+                    <!-- div for the play store icon with the original referenced link to play store  -->
+                    <div class="app-image">
+                        <a href="https://play.google.com/store/games" target="_blank"><img src="img/app_store2.webp"
+                                type="image/webp"></a>
+                    </div>
+
+                    <!-- div for downloading icons for our app ends here  -->
+                </div>
+
+                <!-- the right section div for the get the EAT TREAT APP starts here  -->
+            </div>
+
+        </section>
+
+        <!-- Get the EATTREAT app section ends here-->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Explore Section Starts-->
+
+        <div class="explore" id="explore">
+
+            <!-- Main heading of the section goes here -->
+
+            <h1 style="font-family:'Georgia';">Explore options near you</h1>
+
+            <!-- Explore Card 1 consisting of a heading which will be displayed initially and a list of 'near me' statements which will be 
+      hidden and displayed on hovering main heading of the card -->
+
+            <div class="explore-card">
+
+                <!-- Visible part of the card -->
+
+                <div class="visible-part-explore">
+                    <p class="visible-part-heading">Popular cuisines near me</p>
+                    <p class="visible-part-drop-arrow"><i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+
+                <!-- Hidden part of the card -->
+
+                <div class="hidden-part-explore">
+                    Bakery food near me . Beverages food near me . Biryani food near me . Burger food near me . Chinese
+                    food near
+                    me . Continental food near me . Desserts food near me . Ice Cream food near me . Italian food near
+                    me . Mithai
+                    food near me . Momos food near me . Mughlai food near me . North Indian food near me . Pizza food
+                    near me .
+                    Rolls food near me . Sandwich food near me . Shake food near me . Sichuan food near me . South
+                    Indian food
+                    near me . Street food near me .
+                </div>
+            </div>
+
+            <!-- Explore Card 2 -->
+
+            <div class="explore-card">
+
+                <!-- Visible part of the Card -->
+
+                <div class="visible-part-explore">
+                    <p class="visible-part-heading">Popular restaurant types near me</p>
+                    <p class="visible-part-drop-arrow"><i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+
+                <!-- Hidden part of the card -->
+
+                <div class="hidden-part-explore">
+                    Bakeries near me . Bars near me . Beverage Shops near me . Bhojanalya near me . Cafés near me .
+                    Casual Dining
+                    near me . Clubs near me . Cocktail Bars near me . Dessert Parlors near me . Dhabas near me . Fine
+                    Dining near
+                    me . Food Courts near me . Food Trucks near me . Kiosks near me . Lounges near me . Paan Shop near
+                    me . Pubs
+                    near me . Quick Bites near me . Sweet Shops near me .
+                </div>
+            </div>
+        </div>
+
+        <!-- Explore Section Ends -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Partners Section starts  -->
+
+        <h2 id="partner-heading">Our Partners</h2>
+        <div class="partner-flex-container" id="partners">
+            <div class="partner-flex-item">
+                <a href="https://unacademy.com/" target="_blank"><img src="img/Unacademy.png" alt="Unacademy"></a>
+            </div>
+            <div class="partner-flex-item">
+                <a href="https://www.dream11.com/" target="_blank"> <img src="img/dream 11.png" alt="Dream 11"></a>
+            </div>
+            <div class="partner-flex-item">
+                <a href="https://cred.club/" target="_blank"> <img src="img/cred.png" alt="Cred"></a>
+            </div>
+            <div class="partner-flex-item">
+                <a href="https://upstox.com/" target="_blank"> <img src="img/upstox.png" alt="upstox"></a>
+            </div>
+            <div class="partner-flex-item">
+                <a href="https://www.rupay.co.in/" target="_blank"> <img src="img/rupay.png" alt="Rupay"></a>
+            </div>
+        </div>
+
+        <!-- Partners Section ends here -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Scroll Back to top section starts -->
+
+        <!-- div for scroll back to top  -->
+        <div class="scroll-top">
+            <!--scrollbar at the end of main-->
+            <!-- referenced to the home  -->
+            <a class="scroll-top__link" href="#">Back to top
+                <!-- Font Awesome icon arrow up  -->
+                <i class="fas fa-arrow-up"></i>
+            </a>
+            <!-- href="#" navigates to the top of the page -->
+        </div>
+
+        <!-- Scroll Back to top section ends here -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Footer section starts -->
+        <section class="footer-bar" id="footer-bar">
+
+            <!-- container div for footer starts  -->
+            <div class="container">
+
+                <!-- div footer-lang starts which consists of the main logo and the two buttons for choosing language i.e Hindi and English -->
+                <div class="footer-lang">
+
+                    <!-- adding our mainlogo image of the website in the footer  -->
+                    <img class="footer-logo" src="img/mainlogo.png">
+
+                    <!-- div button for choosing the language starts here  -->
+                    <div class="btn-lang-top">
+
+                        <!-- button for the Hindi language  -->
+                        <a style="color: #fbf5f5;" class="lang-btn" href="#"><img src="img/india-flag.jpg"
+                                height="12px"> Hindi
+                            <small><i class="fa fa-chevron-down"></i></small></a>
+                        <!-- button for the English language  -->
+                        <a style="color: #fbf5f5;" class="lang-btn" href="#"><img src="img/british.jpg" height="18px"
+                                width="18px">
+                            English <small><i class="fa fa-chevron-down"></i></small></a>
+
+                        <!-- div button for choosing the language ends here  -->
+                    </div>
+
+                    <!-- div footer-lang ends here  -->
+                </div>
+
+
+                <!-- div for footer last links starts here which is made in the form of unordered list  -->
+                <div class="footer-last-links">
+
+                    <!-- 1st Section in the footer  -->
+                    <ul>
+                        <li>
+                            <h3 class="footer-list-title">COMPANY</h3>
+                        </li>
+                        <li><a href="#aboutus">Who We Are</a></li>
+                        <li><a href="https://pinchofyum.com/" target="_blank">Blog</a></li>
+                        <li><a href="https://www.burgerking.com.sg/career" target="_blank">Careers</a></li>
+                        <li><a href="https://www.swiggy.com/beware-of-phishing-and-fraud#:~:text=If%20you've%20encountered%20such,no%20other%20help%20channel%20available."
+                                target="_blank">Report Fraud</a></li>
+                        <li><a href="#app">Contact</a></li>
+                    </ul>
+
+                    <!-- 2nd Section in the footer  -->
+                    <ul>
+                        <li>
+                            <h3 class="footer-list-title">FOR FOODIES</h3>
+                        </li>
+                        <li><a href="https://blog.swiggy.com/tag/foodie-community/" target="_blank">Community</a></li>
+                        <li><a href="https://corporate.mcdonalds.com/content/dam/gwscorp/scale-for-good/HUMAN%20RIGHTS_US_English_SBC.pdf"
+                                target="_blank">Code of Conduct</a></li>
+                        <li><a href="#app">Mobile Apps</a></li>
+                        <li><a href="https://www.swiggy.com/support" target="_blank">Blogger Help</a></li>
+                    </ul>
+
+                    <!-- 3rd Section in the footer  -->
+                    <ul>
+                        <li>
+                            <h3 class="footer-list-title">FOR RESTAURANTS </h3>
+                        </li>
+                        <li><a href="https://www.opentable.com/" target="_blank">Add Restaurant</a></li>
+                        <li><a href="https://www.opentable.com/" target="_blank">Claim your Listing</a></li>
+                        <li><a href="#app">Business App</a></li>
+                        <li><a href="#services">Restaurant Widgets</a></li>
+                    </ul>
+
+                    <!-- 4th Section in the footer -->
+                    <ul>
+                        <li>
+                            <h3 class="footer-list-title">FOR YOU</h3>
+                        </li>
+                        <li><a href="https://www.swiggy.com/privacy-policy" target="_blank">Privacy</a></li>
+                        <li><a href="https://www.swiggy.com/terms-and-conditions" target="_blank">Terms</a></li>
+                        <li><a href="https://www.mcdonaldsindia.com/sitemap.html" target="_blank">Sitemap</a></li>
+                        <li><a href="https://blog.swiggy.com/2020/04/17/swiggysafetymeasures/"
+                                target="_blank">Security</a></li>
+                    </ul>
+
+                    <!-- 5th Section in the footer-->
+                    <div class="footer-socials">
+                        <h3 class="footer-list-title">SOCIAL LINKS</h3>
+
+                        <!-- div for footer social links  -->
+                        <div class="footer-social-icons">
+                            <!-- facebook icon with the referenced link-->
+                            <a style="color: #4267B2;" href="https://facebook.com" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <!-- instagram icon with the referenced link -->
+                            <a style="color: #C13584;" href="https://instagram.com" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <!-- twitter icon with the referenced link -->
+                            <a style="color: #1DA1F2;" href="https://twitter.com" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <!-- youtube icon with the referenced link -->
+                            <a style="color: #FF0000;" href="https://youtube.com" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <!-- div for footer social links ends here  -->
+
+                        <!-- div for download the app buttons for our app  -->
+                        <div>
+                            <!-- app store icon added with the referenced link  -->
+                            <a href="https://www.apple.com/in/app-store/" target="_blank"> <img
+                                    src="img/app_store1.webp" type="image/webp" width="137px"> </a>
+                            <!-- play store icon added with the referenced link  -->
+                            <a href="https://play.google.com/store/games" target="_blank"><img src="img/app_store2.webp"
+                                    type="image/webp" width="137px"></a>
+                        </div>
+                        <!-- div for download the app buttons for our app  -->
+                    </div>
+                </div>
+
+                <!-- footer copyright div starts-->
+                <div class="footer-copyright">
+                    <p><small>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+                            Policy
+                            and Content Policies. All trademarks are properties of their respective owners. 2002-2022 ©
+                            EATTREAT Ltd. All rights reserved.</small></p>
+                </div>
+                <!-- footer copyright div ends-->
+            </div>
+            <!-- container div for footer ends-->
+        </section>
+        <!-- Footer section ends here-->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+    </div>
+    <!-- main-container div ends here  -->
+
+</body>
+
+</html>

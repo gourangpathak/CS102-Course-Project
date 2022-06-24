@@ -1,0 +1,1441 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Navbar css section starts*/
+.navbar {
+    padding: 20px 50px;
+    z-index: 1;
+    /* background-color: #ffffff;
+    opacity: 0.6; */
+    /* opacity: 0; */
+    background: rgba(93, 85, 85, 0.7);
+    /* border: 1px solid black; */
+    /* background-color: lightblue; */
+    position: fixed;
+    width: 100vw;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    /* color: white; */
+    color: white;
+    opacity: 1;
+
+}
+
+.navbar-items-div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-top: 3px;
+}
+
+.main-logo {
+    height: 200px;
+    width: 200px;
+    border-radius: 90%;
+}
+
+.navbar-nav {
+    display: inline-flex;
+    margin: 0px;
+    padding-right: 80px;
+}
+
+.navbar a {
+    text-decoration: none;
+    /* color: white; */
+    color: white;
+    transition: color 0.2s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.nav-item {
+    display: inline-flex;
+    color: white;
+    padding: 0px 10px;
+    font-weight: bold;
+
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+
+/*Navbar css section ends*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Home page css starts  */
+.starting-page {
+    background-image: url("../img/main-background.jpg");
+    background-size: 100% auto;
+    background-clip: border-box;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    /* opacity: 0.5; */
+    height: 600px;
+    animation: slider 10s infinite linear, blur 1.5s 1;
+
+}
+
+.starting-page .masking-div {
+    background: rgba(0, 0, 0, 0.5);
+    height: 600px;
+}
+
+/* Blur effect at the start of refresh of the page  */
+
+@keyframes blur {
+    0% {
+        filter: blur(8px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+/* Background slide show effect animation in home page background */
+
+@keyframes slider {
+    0% {
+        background-image: url("../img/main-background.jpg");
+    }
+
+    15% {
+        background-image: url("../img/main-background.jpg");
+    }
+
+    33% {
+        background-image: url("../img/main-background-2.jpg");
+    }
+
+    48% {
+        background-image: url("../img/main-background-2.jpg");
+    }
+
+    67% {
+        background-image: url("../img/main-background-3.jpg");
+    }
+
+    82% {
+        background-image: url("../img/main-background-3.jpg");
+    }
+}
+
+/* Home page css ends*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Typewriter Effect */
+.typing-effect {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h2 {
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+/* Typing effect ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Location search css starts */
+
+.location-search {
+    color: white;
+    text-align: center;
+    padding-top: 220px;
+
+    /* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase; */
+}
+
+.location-search h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 0;
+
+}
+
+.location-search h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    max-width: 100vw;
+}
+
+.location-input {
+    background-color: white;
+    display: inline-flex;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.location-search select {
+    font-size: 18px;
+    width: 30%;
+    border: none;
+    padding: 0px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.location-search-box {
+    font-size: 18px;
+    width: 70%;
+    border: none;
+    padding: 20px 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.location-search-box:focus,
+.location-search select {
+    outline: none;
+}
+
+/*Location search css starts */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Dark theme button css starts */
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    transition: .7s ease;
+}
+
+/* Styling the checkbox input */
+#checkbox {
+    position: absolute;
+    top: 1100px;
+    left: 5%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    width: 80px;
+    height: 40px;
+    background: black;
+    border-radius: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* styling the circle inside the checkbox input before getting toggled */
+#checkbox::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+/* Switching to the dark when the checkbox is toggled */
+
+/* changing the background of the following div as well as our main container to black  */
+/* and the color of the font to white when the checkbox is checked  */
+
+#checkbox:checked+.main-container {
+    background: rgb(19, 18, 18);
+    color: white;
+}
+
+#checkbox:checked+.main-container .services-flex-container .services-flex-item {
+    background: rgb(19, 18, 18);
+    color: white;
+}
+
+#checkbox:checked+.main-container .partner-flex-container {
+    background: rgb(19, 18, 18);
+}
+
+#checkbox:checked+.main-container #partner-heading {
+    color: #f8efef;
+}
+
+#checkbox:checked::before {
+    left: 40px;
+    background-color: black;
+}
+
+/* changing the color of the checkbox when it's toggled from black to white*/
+#checkbox:checked {
+    background: white;
+}
+
+/*Dark theme button css ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* about section css starts */
+.about-flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #2b1e16;
+}
+
+.about-flex-item-1 {
+    width: 35%;
+    position: relative;
+    text-align: center;
+}
+
+.about-flex-item-1>h1 {
+    position: absolute;
+    left: 9%;
+    top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 100px;
+}
+
+.about-flex-item-2 {
+    width: 50%;
+}
+
+.about-flex-item-2>p {
+    line-height: 2;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+#about-para {
+    line-height: 2;
+    font-size: 1.2rem;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5%;
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+.about-images {
+    height: auto;
+    opacity: 0.8;
+}
+
+.pizza-image {
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+
+.burger-image {
+    position: absolute;
+    width: 220px;
+    left: 10px;
+    top: 850px;
+}
+
+/* about section css ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Responsive css for about us with respect to dark theme button starts */
+
+@media screen and (max-width: 1160px) and (min-width : 940px) {
+    .about-flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .burger-image {
+        position: absolute;
+        width: 220px;
+        left: 10px;
+        top: 1220px;
+    }
+
+    .pizza-image {
+        position: absolute;
+        top: 636px;
+        right: 0px;
+        width: 180px;
+    }
+
+    #checkbox {
+        position: absolute;
+        top: 1448px;
+        left: 5%;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        width: 80px;
+        height: 40px;
+        background: black;
+        border-radius: 22px;
+        cursor: pointer;
+        outline: none;
+    }
+
+
+    .about-flex-item-1 {
+        right: 20%;
+        position: relative;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-flex-item-1>h1 {
+        position: absolute;
+        left: 8%;
+        bottom: 10%;
+        font-size: 60px;
+    }
+
+    .about-flex-item-2>p {
+        line-height: 2;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30%;
+        font-size: 1.2rem;
+    }
+
+    #about-para {
+        line-height: 2;
+        font-size: 1.2rem;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0%;
+    }
+
+}
+
+@media screen and (max-width: 940px) and (min-width : 700px) {
+    .about-flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .burger-image {
+        position: absolute;
+        width: 160px;
+        left: 10px;
+        top: 1220px;
+    }
+
+    .pizza-image {
+        position: absolute;
+        top: 636px;
+        right: 0px;
+        width: 180px;
+    }
+
+
+    #checkbox {
+        position: absolute;
+        top: 1448px;
+        left: 5%;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        width: 80px;
+        height: 40px;
+        background: black;
+        border-radius: 22px;
+        cursor: pointer;
+        outline: none;
+    }
+
+
+    .about-flex-item-1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-flex-item-1>h1 {
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+
+    .about-flex-item-2 {
+        margin-top: 70px;
+    }
+
+    .about-flex-item-2>p {
+        line-height: 2;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30%;
+        font-size: 1.2rem;
+    }
+
+    #about-para {
+        line-height: 2;
+        font-size: 1.2rem;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .burger-image {
+        position: absolute;
+        width: 160px;
+        left: 10px;
+        top: 1150px;
+    }
+
+    .pizza-image {
+        position: absolute;
+        top: 636px;
+        right: 0px;
+        width: 130px;
+    }
+
+    #checkbox {
+        position: absolute;
+        top: 1448px;
+        left: 5%;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        width: 80px;
+        height: 40px;
+        background: black;
+        border-radius: 22px;
+        cursor: pointer;
+        outline: none;
+    }
+
+
+    .about-flex-item-1 {
+        position: relative;
+    }
+
+    .about-flex-item-1>h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 60px;
+        margin-right: 90px;
+        font-size: 40px;
+    }
+
+    .about-flex-item-2 {
+        margin-top: 120px;
+    }
+
+    .about-flex-item-2>p {
+        line-height: 1.5;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30%;
+        font-size: 1.2rem;
+    }
+
+    #about-para {
+        line-height: 1.5;
+        font-size: 1.2rem;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0%;
+    }
+}
+
+
+/* Responsive css for about us with respect to dark theme button ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*info Section css starts*/
+.info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #2b1e16;
+    padding: 20px;
+    padding-top: 0;
+    height: 350px;
+}
+
+.info-item {
+    width: 30%;
+    text-align: center;
+}
+
+.info-item>img {
+    width: 30%;
+    height: 48%;
+    margin-bottom: 42px;
+}
+
+.info-item>h3 {
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.info-content {
+    font-size: 14px;
+    width: 60%;
+    margin-top: 10px;
+    color: #e0cbc1;
+    line-height: 1.3;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
+}
+
+/* Responsive css for info div starts */
+
+@media screen and (max-width: 1000px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background: #2b1e16;
+        padding: 20px;
+        padding-top: 0;
+        height: 1000px;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .info-item {
+        width: 45%;
+        margin: 10 auto 10;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #2b1e16;
+        padding: 20px;
+        padding-top: 0;
+        height: 1000px;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .info-item>img {
+        width: 30%;
+        height: 28%;
+        margin-bottom: 42px;
+    }
+
+    .info-item {
+        width: 40%;
+    }
+
+    .info-content {
+        font-size: 14px;
+        width: 50%;
+        margin-top: 10px;
+        color: #e0cbc1;
+        line-height: 1.3;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #2b1e16;
+        padding: 20px;
+        padding-top: 0;
+        height: 1000px;
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .info-item>img {
+        width: 30%;
+        height: 28%;
+        margin-bottom: 42px;
+    }
+
+    .info-item {
+        width: 50%;
+    }
+
+    .info-content {
+        font-size: 14px;
+        width: 50%;
+        margin-top: 10px;
+        color: #e0cbc1;
+        line-height: 1.3;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 20px;
+    }
+}
+
+/* Responsive css for info div starts */
+
+/*info Section ends*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Services section starts */
+
+.services-flex-item a img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+
+.services-flex-container {
+    padding: 4% 14%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.services-flex-item {
+    justify-content: space-between;
+    margin: 0 auto 20px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    background: white;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 1.2rem;
+    transition: transform .3s;
+}
+
+.services-flex-item:hover {
+    transform: scale(1.05);
+}
+
+
+.services-flex-content>h4 {
+    margin-top: 0px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.services-flex-container>p {
+    line-height: 1.25;
+}
+
+.services-flex-content {
+    text-align: left;
+    padding: 10px;
+}
+
+/* Services section ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Collections section css starts */
+
+.collection {
+    padding: 4% 14%;
+}
+
+.all-collection-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.collection-card {
+    background-color: #0a0a0a;
+    max-width: 24%;
+    display: inline-flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.collection-card-image {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: opacity 0.2s;
+}
+
+.collection-card-image:hover {
+    opacity: 0.8;
+}
+
+.collection-card-detail {
+    width: 100%;
+    padding: 5px 0;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    background-image: linear-gradient(transparent, black);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-detail {
+    margin-bottom: 0px;
+    padding: 5px 20px 0;
+    font-size: 18px;
+
+}
+
+.card-detail-places {
+    margin-top: 3px;
+    padding: 0px 20px;
+}
+
+/* Collections section css End */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Google Map Section css starts*/
+
+.maps {
+    padding: 4% 14%;
+}
+
+.map {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* Google Maps Section css Ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Popular Locations css starts*/
+
+.popular-locations {
+    padding: 4% 14%;
+}
+
+.all-location-cards {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.location-card {
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 10px;
+    min-width: 27%;
+    padding: 15px 25px;
+    position: relative;
+    margin: 0 auto 20px;
+    transition: box-shadow 0.3s;
+}
+
+.location-card:hover {
+    box-shadow: 10px 11px 10px -6px rgb(121, 28, 28);
+}
+
+.location-card p {
+    margin: 0px;
+}
+
+.redirecting-arrow {
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+
+.location-card-heading {
+    margin: 0px;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 7px !important;
+}
+
+.location-card-places {
+    position: relative;
+}
+
+/* Popular location css ends/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Explore Section css starts*/
+
+.explore {
+    padding: 25px 14%;
+    /* background-color: #fcfcfc; */
+}
+
+.explore-card {
+    border-radius: 10px;
+    margin-top: 40px;
+    border: 1px solid rgb(232, 232, 232);
+    padding: 2.5% 4.5%;
+    max-height: 25px;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+.explore-card:hover {
+    max-height: 10rem;
+}
+
+.visible-part-explore {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.visible-part-heading {
+    margin: 0 auto 0 0;
+}
+
+.visible-part-drop-arrow {
+    margin: 0 0 0 auto;
+}
+
+.hidden-part-explore {
+    margin-top: 40px;
+}
+
+
+/* Explore Section css ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Get the EAT TREAT app page css starts*/
+
+.goodies-app {
+    margin: 50px auto 50px;
+    /* padding-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goodies-app img {
+    height: 600px;
+}
+
+.goodies-app .goodies-app-right {
+    margin-left: 50px;
+    width: 450px;
+}
+
+.goodies-app .goodies-app-right h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.goodies-app .goodies-app-right p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.goodies-app-right .radio-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 50%;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+.goodies-app-right .radio-btn input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.goodies-app-right .email-phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.goodies-app-right input[type="text"] {
+    padding: 13px 12px;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf;
+    margin-right: 10px;
+}
+
+.goodies-app-right a.btn-share {
+    color: #fff;
+    background-color: #ed5a6b;
+    border-radius: 8px;
+    padding: 13px 12px;
+    text-decoration: none;
+}
+
+.goodies-app-right a.btn-share:hover {
+    background-color: #ec4654;
+}
+
+.goodies-app-right .app-store {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.goodies-app-right p.small-text {
+    color: #9c9c9c;
+    margin-top: 20px;
+}
+
+.goodies-app-right .app-store .app-image {
+    margin-right: 20px;
+}
+
+.goodies-app-right .app-store img {
+    width: 137px;
+    height: 40px;
+}
+
+/*Get the EAT TREAT app page css ends here*/
+
+/*Zoom-In Effect to Moble App Image*/
+
+/* the transformation will be updated 0.2s after the user hovers over the image*/
+.zoom-image {
+    /* Animation */
+    transition: transform .2s;
+}
+
+/* the transformation added is scaling i.e scales the image as a zoom in effect by 1.19 times */
+.zoom-image:hover {
+    transform: scale(1.19);
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Partners Section css Starts */
+
+.partner-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.partner-flex-item a img {
+    width: 250px;
+}
+
+#partner-heading {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #8c8c8c;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Partners Section css Ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*FOOTER section css section starts*/
+
+.footer-bar {
+    padding-top: 50px;
+    background: #2b1e16;
+    max-width: 100%;
+}
+
+.footer-bar .footer-lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.footer-bar .footer-lang img.footer-logo {
+    /* background-color: white; */
+    height: 150px;
+    margin-left: 20px;
+}
+
+.footer-bar .footer-lang a.lang-btn {
+    text-decoration: none;
+    font-size: 16px;
+    color: #1c1c1c;
+    padding: 8px 5px;
+    border: 1px solid #b5b5b5;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+a.lang-btn {
+    width: 40px;
+}
+
+.footer-bar .footer-last-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.footer-bar .footer-last-links ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer-list-title {
+    color: white;
+}
+
+.footer-bar .footer-last-links h4.footer-list-title {
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    font-size: 14px;
+}
+
+.footer-bar .footer-last-links ul li a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-bar .footer-last-links ul li a:hover {
+    color: yellowgreen;
+}
+
+.footer-bar .footer-last-links .footer-social-icons {
+    margin-bottom: 20px;
+}
+
+.footer-bar .footer-last-links .footer-social-icons a {
+    color: #1c1c1c;
+}
+
+.footer-bar .footer-last-links .footer-social-icons .fa-facebook,
+.footer-bar .footer-last-links .footer-social-icons .fa-twitter,
+.footer-bar .footer-last-links .footer-social-icons .fa-instagram {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.footer-bar .footer-copyright {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #0a0a0a;
+    color: white;
+}
+
+/*FOOTER section css ends here*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* SCROLL TO THE TOP BUTTON css section starts*/
+
+.scroll-top {
+    top: 80%;
+    --fade: 120px;
+    position: sticky;
+    bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    place-self: end;
+    border-radius: 10px;
+}
+
+.scroll-top__link {
+    position: sticky;
+    top: 85vh;
+    text-decoration: none;
+    border-radius: .25rem;
+    background-color: rgb(62, 62, 211);
+    padding: 1rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    opacity: .3;
+}
+
+.scroll-top__link:hover {
+    opacity: initial;
+}
+
+/* SCROLL TO THE TOP BUTTON css section starts*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* CUSTOM SCROLL BAR css starts*/
+
+/* what is webkit? :-  */
+/* webkit' extenstions are used in the CSS syntax for rendering content in Safari and Chrome browsers. */
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(245, 172, 108);
+    border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #863b0c;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5c0808;
+}
+
+/* CUSTOM SCROLL BAR css ends*/
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    transition: .7s ease;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .collection-card {
+        max-width: 48%;
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar-brand-div {
+        margin: 0 auto;
+    }
+
+    .navbar-items-div {
+        margin: 0 auto;
+
+    }
+}
+
+@media (max-width:770px) {
+    .navbar {
+        display: block;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .navbar-items-div {
+        float: none;
+    }
+
+    .navbar-nav {
+        padding: 0;
+        float: none;
+    }
+
+    .nav-item {
+        font-size: 8px;
+    }
+
+    .location-search h2 {
+        font-size: 20px;
+    }
+
+    .goodies-app {
+        text-align: center;
+        display: block;
+    }
+
+    .goodies-app .goodies-app-right {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .goodies-app img {
+        margin: 0 auto;
+    }
+
+    .goodies-app .radio-btn {
+        margin: 0 auto 20px;
+    }
+
+    .goodies-app .email-phone {
+        display: block;
+
+        /* width: 60%;
+        margin: auto; */
+    }
+
+    .goodies-app .app-store {
+        justify-content: center;
+    }
+
+    /* .info-container{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .info-item{
+        max-width: 25%;
+    } */
+}
+
+@media (max-width: 690px) {
+    .collection-card {
+        max-width: 80%;
+        margin: 0 auto 15px;
+    }
+
+    .footer-bar .footer-last-links {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-socials {
+        text-align: center;
+    }
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Blinking animation effect added to Get the EAT TREAT app*/
+
+.blink-name {
+    font-size: 5em;
+    font-family: serif;
+    color: #ed5a6b;
+    text-align: center;
+    animation: animate 1.8s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
